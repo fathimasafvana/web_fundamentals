@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+}
+
+
+/* Navbar */
+
+nav {
+    background: #222;
+    color: white;
+
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+
+/* Hero */
+
+.hero {
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background: #00bcd4;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.hero button {
+    padding: 12px 25px;
+
+    border: none;
+    border-radius: 5px;
+
+    background: white;
+    color: #00a5bb;
+
+    cursor: pointer;
+}
+
+
+/* Search */
+
+.search-section {
+    text-align: center;
+    padding: 30px;
+}
+
+#searchInput {
+    width: 80%;
+    max-width: 500px;
+
+    padding: 14px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+    font-size: 16px;
+}
+
+
+/* Blog */
+
+#blogs {
+    padding: 40px 8%;
+}
+
+#blogs > h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-container {
+    display: flex;
+    gap: 25px;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+/* Blog Card */
+
+.blog-card {
+    background: white;
+
+    width: 300px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card h3 {
+    margin-bottom: 10px;
+}
+
+.date {
+    color: #777;
+    font-size: 14px;
+
+    margin-bottom: 15px;
+}
+
+.blog-card p {
+    line-height: 1.6;
+}
+
+.blog-card button {
+    margin-top: 20px;
+
+    padding: 10px 15px;
+
+    background: #00bcd4;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.blog-card button:hover {
+    background: #0097a7;
+}
+
+
+/* About */
+
+.about {
+    text-align: center;
+
+    padding: 60px 20px;
+
+    background: white;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+
+    padding: 50px 20px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .blog-card {
+        width: 90%;
+    }
+}

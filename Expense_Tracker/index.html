@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <h3>Expense Tracker</h3>
+
+    <div class="top">
+      <div class="box blue">Balance<br><b id="balance">₹0</b></div>
+      <div class="box green">Income<br><b id="income">₹0</b></div>
+      <div class="box red">Expense<br><b id="expense">₹0</b></div>
+    </div>
+
+    <input id="title" type="text" placeholder="Title">
+    <input id="amount" type="number" placeholder="Amount">
+
+    <select id="category">
+      <option value="" disabled selected>Category</option>
+      <option>Salary</option>
+      <option>Freelance</option>
+      <option>Food</option>
+      <option>Shopping</option>
+      <option>Other</option>
+    </select>
+
+    <select id="type">
+      <option value="" disabled selected>Type</option>
+      <option value="income">Income</option>
+      <option value="expense">Expense</option>
+    </select>
+
+    <input id="date" type="date">
+
+    <button id="addBtn">Add</button>
+
+    <div class="filters">
+      <button class="f active" data-f="all">All</button>
+      <button class="f" data-f="income">Income</button>
+      <button class="f" data-f="expense">Expense</button>
+    </div>
+
+    <div id="list"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

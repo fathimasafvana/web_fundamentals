@@ -1,0 +1,95 @@
+*{
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  background: #f2f4f7;
+}
+
+/* Header */
+.header{
+  background: linear-gradient(90deg, #20c6b6, #1f6feb);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+.header h2{ margin: 0; font-size: 22px; }
+.header p{ margin: 6px 0 0; font-size: 13px; opacity: 0.9; }
+
+.container{
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+.top-card{
+  background: white;
+  padding: 12px 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.top-card input{
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.card{
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+.card h3{ margin: 0 0 15px; font-size: 16px; }
+
+/* Table */
+table{
+  width: 100%;
+  border-collapse: collapse;
+}
+th{
+  background: #f1f2f5;
+  padding: 12px;
+  text-align: left;
+  font-size: 14px;
+}
+td{
+  padding: 14px 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+td:nth-child(2), td:nth-child(3),
+th:nth-child(2), th:nth-child(3){
+  text-align: center;
+}
+input[type="radio"]{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#saveBtn{
+  margin-top: 18px;
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 9px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* Report */
+.report-box{
+  background: #f1f2f5;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.report-box b{ font-size: 14px; display: block; }
+.report-box span{ font-size: 13px; display: block; margin-top: 3px; color: #333; }

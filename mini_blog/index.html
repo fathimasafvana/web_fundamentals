@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mini Blog</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h1>My Blog</h1>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#blogs">Blogs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <h2>Welcome to My Blog</h2>
+
+        <p>
+            Read my latest articles and thoughts.
+        </p>
+
+        <button onclick="scrollToBlogs()">Explore Blogs</button>
+
+    </section>
+
+
+    <!-- Search -->
+    <section class="search-section">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search blogs..."
+            onkeyup="searchBlogs()"
+        >
+
+    </section>
+
+
+    <!-- Blog Section -->
+    <section id="blogs">
+
+        <h2>Latest Blogs</h2>
+
+        <div class="blog-container" id="blogContainer">
+
+            <!-- Blog 1 -->
+            <div class="blog-card">
+
+                <h3>Learning Python</h3>
+
+                <p class="date">October 5, 2026</p>
+
+                <p>
+                    Python is a simple and powerful programming language.
+                    It is useful for web development, automation and AI.
+                </p>
+
+                <button onclick="readMore('Learning Python')">
+                    Read More
+                </button>
+
+            </div>
+
+
+            <!-- Blog 2 -->
+            <div class="blog-card">
+
+                <h3>Why Learn Django?</h3>
+
+                <p class="date">October 3, 2026</p>
+
+                <p>
+                    Django is a Python web framework used to build
+                    powerful and secure web applications.
+                </p>
+
+                <button onclick="readMore('Why Learn Django?')">
+                    Read More
+                </button>
+
+            </div>
+
+
+            <!-- Blog 3 -->
+            <div class="blog-card">
+
+                <h3>Importance of JavaScript</h3>
+
+                <p class="date">October 1, 2026</p>
+
+                <p>
+                    JavaScript makes websites interactive and dynamic.
+                    It is an important web development technology.
+                </p>
+
+                <button onclick="readMore('Importance of JavaScript')">
+                    Read More
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about">
+
+        <h2>About My Blog</h2>
+
+        <p>
+            This is my mini blog where I share programming,
+            technology and web development topics.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>Contact</h2>
+
+        <p>Email: myblog@example.com</p>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 My Blog. All Rights Reserved.</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>

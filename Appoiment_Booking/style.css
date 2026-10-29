@@ -1,0 +1,76 @@
+* { font-family: Arial, sans-serif; box-sizing: border-box; }
+body { margin: 0; background: #f2f4f7; }
+
+.header {
+  background: linear-gradient(90deg, #2bbf9e, #1a5fbe);
+  color: white;
+  text-align: center;
+  padding: 30px 10px;
+}
+.header h2 { margin: 0; }
+.header p { margin-top: 8px; font-size: 13px; opacity: 0.9; }
+
+.main-container {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.card h3 { margin-top: 0; }
+
+input, select {
+  width: 100%;
+  padding: 11px;
+  margin-bottom: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  outline: none;
+  background: #fcfcfc;
+}
+
+#bookBtn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(90deg, #2bbf9e, #1a5fbe);
+}
+
+.appt {
+  background: #f1f2f5;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.appt strong { font-size: 14px; display: block; }
+.appt span { font-size: 13px; display: block; color: #333; margin-top: 2px; }
+.booked { color: green !important; font-weight: bold; font-size: 11px !important; margin: 6px 0 !important; }
+
+.appt button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  margin-top: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  background: linear-gradient(90deg, #2bbf9e, #1a5fbe);
+}
+
+@media(max-width:800px){
+  .main-container{ flex-direction: column; }
+}

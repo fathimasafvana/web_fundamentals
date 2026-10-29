@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Chat App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="chat-app">
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+
+            <div class="sidebar-header">
+                <h2>Chat App</h2>
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="user active">
+                <div class="avatar">A</div>
+
+                <div class="user-info">
+                    <h3>Alex</h3>
+                    <p>Hey, how are you?</p>
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="avatar">J</div>
+
+                <div class="user-info">
+                    <h3>John</h3>
+                    <p>See you tomorrow!</p>
+                </div>
+            </div>
+
+            <div class="user">
+                <div class="avatar">S</div>
+
+                <div class="user-info">
+                    <h3>Sarah</h3>
+                    <p>Thank you!</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Chat Section -->
+        <div class="chat-section">
+
+            <!-- Chat Header -->
+            <div class="chat-header">
+
+                <div class="avatar">A</div>
+
+                <div>
+                    <h3>Alex</h3>
+                    <p>Online</p>
+                </div>
+
+            </div>
+
+
+            <!-- Messages -->
+            <div class="messages" id="messages">
+
+                <div class="message received">
+                    <p>Hello! How are you?</p>
+                    <span>10:30 AM</span>
+                </div>
+
+                <div class="message sent">
+                    <p>I'm good! How about you?</p>
+                    <span>10:31 AM</span>
+                </div>
+
+                <div class="message received">
+                    <p>I'm doing great 😊</p>
+                    <span>10:32 AM</span>
+                </div>
+
+            </div>
+
+
+            <!-- Message Input -->
+            <div class="message-input">
+
+                <input
+                    type="text"
+                    id="messageInput"
+                    placeholder="Type a message..."
+                >
+
+                <button id="sendButton">Send</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

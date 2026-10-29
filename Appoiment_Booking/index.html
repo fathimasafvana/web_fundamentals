@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Booking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h2>📅 Appointment Booking</h2>
+    <p>Book & manage your appointments</p>
+  </div>
+
+  <div class="main-container">
+    <!-- Left Section -->
+    <div class="card">
+      <h3>Book Appointment</h3>
+      <select id="service">
+        <option value="" disabled selected>Select Service</option>
+        <option>Doctor Consultation</option>
+        <option>Mentor Session</option>
+        <option>Business Meeting</option>
+        <option>Salon Appointment</option>
+      </select>
+      <input type="date" id="date">
+      <select id="time">
+        <option value="" disabled selected>Select Time Slot</option>
+        <option>10:00 AM</option>
+        <option>11:00 AM</option>
+        <option>04:00 PM</option>
+        <option>06:00 PM</option>
+      </select>
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Email">
+      <button id="bookBtn">Book Appointment</button>
+    </div>
+
+    <!-- Right Section -->
+    <div class="card">
+      <h3>My Appointments</h3>
+      <div id="list"></div>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

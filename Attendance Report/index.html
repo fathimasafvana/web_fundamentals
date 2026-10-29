@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="header">
+    <h2>🎓 Attendance Management</h2>
+    <p>Mark and track student attendance</p>
+  </div>
+
+  <div class="container">
+
+    <div class="top-card">
+      <label>Select Date</label>
+      <input type="date" id="date">
+    </div>
+
+    <div class="card">
+      <h3>Students</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Present</th>
+            <th>Absent</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <!-- rows from JS -->
+        </tbody>
+      </table>
+      <button id="saveBtn">Save Attendance</button>
+    </div>
+
+    <div class="card">
+      <h3>Attendance Report</h3>
+      <div id="reportList"></div>
+    </div>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
